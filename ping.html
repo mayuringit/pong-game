@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="stylish.css">
+</head>
+
+<body>
+
+    <body>
+        <h2>🏓 Ping Pong</h2>
+
+        <canvas id="game"></canvas>
+
+        <audio id="hitSound" src="hit.mp3"></audio>
+        <audio id="wallSound" src="wall.mp3"></audio>
+        <audio id="scoreSound" src="score.mp3"></audio>
+
+        <div id="popup" style="display:none;">
+            <p id="popupText"></p>
+            <button id="continuebtn">Continue</button>
+        </div>
+
+        <div id="scoreboard">
+            <span id="score1">0</span> : <span id="score2">0</span>
+        </div>
+
+        <div id="winnerText"></div>
+        <div id="difficultyButtons">
+            <button id="easy-btn">Easy</button>
+            <button id="hard-btn">Hard</button>
+            <button id="insane-btn">Insane</button>
+        </div>
+
+    </body>
+    <script src="./indie.js"></script>
+
+</html>
