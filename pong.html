@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body>
+        <h2>🏓 Ping Pong</h2>
+
+        <div class="scoreboard">
+            Player 1 (W/S): <span id="score1">0</span> | Player 2 (↑/↓): <span id="score2">0</span>
+        </div>
+
+        <canvas id="game"></canvas>
+        <div id="difficulty-selector" style="margin: 10px 0;">
+            <button onclick="setDifficulty('easy')" id="easy-btn">Easy</button>
+            <button onclick="setDifficulty('hard')" id="hard-btn">Hard</button>
+            <button onclick="setDifficulty('insane')" id="insane-btn">Insane</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="startGame()">Start</button>
+            <button onclick="stopGame()">Stop</button>
+        </div>
+
+        <div class="popup" id="popup">
+            <p id="popupText"></p>
+            <button onclick="continueGame()" class="continuebtn" id="continuebtn">Continue</button>
+        </div>
+        <div class="winner" id="winnerText"></div>
+
+    </body>
+    <script src="./index.js"></script>
+
+</html>
